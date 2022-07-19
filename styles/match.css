@@ -94,13 +94,14 @@
     .flexible-container .blogs {
         margin-top: 20px;
         display: grid;
-        grid-template-columns: min-content min-content;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         margin-right: 10px;
     }
 
     .flexible-container .blogs .blog {
         width: 100%;
+        padding: 20px 0;
     }
 
     .flexible-container .blogs .blog .blog-text {
@@ -231,16 +232,22 @@ nav a {
 }
 
 .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    padding: 40px;
 }
 
-.blogs .blog img {
-    margin-bottom: 10px;
+.blogs .blog .match{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .blogs .blog .blog-text {
-    padding-left: 15px;
+    text-align: center;
 }
 
 .blogs .blog a {
