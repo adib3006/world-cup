@@ -36,7 +36,7 @@
         margin-top: 10px;
     }
 
-    .flexible-container .blogs {
+    .flexible-container .matches {
         margin-top: 10px;
         margin-right: 0;
         display: grid;
@@ -45,7 +45,7 @@
         row-gap: 10px;
     }
 
-    .flexible-container .blogs .blog {
+    .flexible-container .matches .match-card {
         width: 100%;
     }
 
@@ -91,7 +91,7 @@
         border: 1px solid rgb(211, 211, 211);
     }
 
-    .flexible-container .blogs {
+    .flexible-container .matches {
         margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -99,12 +99,12 @@
         margin-right: 10px;
     }
 
-    .flexible-container .blogs .blog {
+    .flexible-container .matches .match-card {
         width: 100%;
         padding: 20px 0;
     }
 
-    .flexible-container .blogs .blog .blog-text {
+    .flexible-container .matches .match-card .match-text {
         padding-left: 15px;
         padding-right: 20px;
     }
@@ -223,15 +223,15 @@ nav a {
 }
 
 /* main contents */
-/* blog */
-.blogs {
+/* match-card */
+.matches {
     margin-left: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.blog {
+.match-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -240,17 +240,17 @@ nav a {
     padding: 40px;
 }
 
-.blogs .blog .match{
+.matches .match-card .match{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.blogs .blog .blog-text {
+.matches .match-card .match-text {
     text-align: center;
 }
 
-.blogs .blog a {
+.matches .match-card a {
     border: 1px solid black;
     padding: 0 1%;
     border-radius: 5px;
@@ -261,19 +261,19 @@ nav a {
     align-items: center;
 }
 
-.blogs .blog .blog-bottom {
+.matches .match-card .match-card-bottom {
     display: flex;
     align-items: center;
 }
 
-.blogs .blog .blog-bottom img {
+.matches .match-card .match-card-bottom img {
     height: 24px;
     width: 24px;
     padding-right: 10px;
     padding-top: 10px;
 }
 
-.blogs .blog .blog-bottom p {
+.matches .match-card .match-card-bottom p {
     padding-right: 20px;
 }
 
